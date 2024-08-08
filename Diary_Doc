@@ -1,5 +1,5 @@
 !Nhận dạng tin giả
-  Data đầu vào: embeddings (8944,768) (Không nhãn/tất cả đều là tin thật)
+  Data đầu vào: embeddings (8943,768) (Không nhãn/tất cả đều là tin thật)
   Thử nghiệm với một vài bài toán về phân loại, gom cụm
   Mắc kẹt: Không biết cách nào để cải thiện, không biết nên triển khai thuật toán nào!
   !! Tiền xử lý dữ liệu
