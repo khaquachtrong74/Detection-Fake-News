@@ -1,10 +1,15 @@
-#soha
+#thanhnien
 import pandas as pd
 from newspaper import build
 from newspaper import Article
+import string
 import csv
 # Define the URL of the news website
-cnn_paper = build('https://soha.vn/bao-dan-tri.html',language='vi',memoize_articles=True)
+cnn_paper = build('https://thanhnien.vn/',language='vi',memoize_articles=True)
+# cnn_paper = build('https://tuoitre.vn/',language='vi',memoize_articles=True)
+# cnn_paper = build('https://doisongphapluat.com.vn/',language='vi',memoize_articles=True)
+# cnn_paper = build('https://soha.vn/bao-dan-tri.html',language='vi',memoize_articles=True)
+
 Source =[]
 Date=[]
 Content=[]
@@ -31,10 +36,11 @@ df = pd.DataFrame({
     'Content': Content,
     'Source': Source
 })
+# df.to_csv('data_thanhnien6.csv',mode='w',index=False)
+
+# thanhnien = pd.read_csv('data_thanhnien6.csv')
 df['Date'] = df['Date'].astype(str)
 df['Content'] = df['Content'].astype(str)
 # df = df[df['Date'].str.contains('2024-07-30')]
-df = df[df['Content'].str.len() > 10]
-df.to_csv('data_soha11.csv',mode='w',header=True,index=False)
-
-
+df = df[df['Content'].str.len() > 20]
+df.to_csv('data_thanhnien11.csv', index=False, mode='w')
