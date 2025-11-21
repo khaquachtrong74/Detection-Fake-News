@@ -1,4 +1,4 @@
-# Detection Fake News (Vietnamese)
+# Fake News Detection (Vietnamese)
 
 Dự án xây dựng hệ thống phát hiện tin giả tiếng Việt sử dụng các kỹ thuật Học máy (Machine Learning) và Xử lý ngôn ngữ tự nhiên (NLP). Hệ thống kết hợp việc thu thập dữ liệu từ các báo chính thống, vector hóa văn bản (TF-IDF, BERT Embeddings) và phân loại sử dụng SVM, KNN và đo độ tương đồng Cosine.
 
